@@ -140,6 +140,7 @@ body {
 
 .header__title {
 	transform: translateY(-4px);
+	color: var(--clr-purple-950);
 }
 
 .hidden {
@@ -177,4 +178,45 @@ hr {
 	border: none;
 	height: 2px;
 	margin: 1rem 5px;
+}
+
+@media (min-width: 770px) {
+	.background__wrapper {
+		height: 320px;
+		overflow: hidden;
+	}
+
+	.faq__background {
+		transform: scale(1.85);
+	}
+
+	.faq {
+		padding: 2rem;
+		max-width: 83%;
+		border-radius: 15px;
+	}
+
+	.header__icon {
+		height: 2.5rem;
+	}
+
+	.header__title {
+		font-size: 3.5rem;
+	}
+
+	.accordion__question {
+		font-size: var(--fs-normal);
+	}
+
+	.accordion__answer {
+		margin-inline: 4px;
+		font-size: 1rem;
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.faq {
+		max-width: 600px;
+	}
 }
