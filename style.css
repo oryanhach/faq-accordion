@@ -153,6 +153,7 @@ body {
 	display: flex;
 	text-align: left;
 	width: 100%;
+	cursor: pointer;
 }
 
 .accordion__text {
@@ -216,6 +217,10 @@ hr {
 }
 
 @media (min-width: 1440px) {
+	.faq__background {
+		transform: scale(1);
+	}
+
 	.faq {
 		max-width: 600px;
 	}
